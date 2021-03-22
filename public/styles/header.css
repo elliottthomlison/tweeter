@@ -2,16 +2,12 @@
   display: flex;
   height: 400px;
   width: 100%; 
-  background-color: gray;
+  background-color: goldenrod;
 
-  /* The avatar should be centered vertically and horizontally (Hint: 
-  the justify-content and align-items properties are helpful for centering things if you're using Flexbox.) */
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");;
 }
-
-/* 
-align-self: flex-start;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
