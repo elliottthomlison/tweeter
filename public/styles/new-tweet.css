@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  background-color: #f4f1ec;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Bungee', cursive;
+  width: 114%;
+  padding: 1em;
+  align-self: center;
+}

@@ -1,0 +1,9 @@
+.nav { 
+  font-family: 'Bungee', cursive;
+  color: #FFFFFF;
+  height: 120px; 
+  background-color: #4056a1;
+  padding: 1.5em;
+}
+
+/* The <span> within the <nav> has Bungee as it's default font-family */

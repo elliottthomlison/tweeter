@@ -1,0 +1,17 @@
+.topHeader {
+  display: flex;
+  height: 400px;
+  width: 100%; 
+  background-color: gray;
+
+  /* The avatar should be centered vertically and horizontally (Hint: 
+  the justify-content and align-items properties are helpful for centering things if you're using Flexbox.) */
+
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");;
+}
+
+/* 
+align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */

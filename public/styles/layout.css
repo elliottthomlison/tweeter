@@ -18,8 +18,20 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+  display: flex;
+  width: 90%;
+  align-content: center;
+  background-color: #f4f1ec;
+  flex-direction: row;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+
+/* Need to do this step:  https://web.compass.lighthouselabs.ca/days/w04d1/activities/319 */
