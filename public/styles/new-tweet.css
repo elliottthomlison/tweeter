@@ -4,49 +4,101 @@
   justify-content: center;
   align-items: flex-start;
   font-family: 'Bungee', cursive;
-  width: 100%;
+  width: 114%;
   padding: 1em;
   align-self: center;
-  /* border: 10px solid black; */
-  flex-direction: row;
+}
+
+.new-tweet button {
+  background-color: goldenrod; 
+  border: none;
+  color: black;
+  padding: .8em 1.2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.new-tweet h2 {
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.new-tweet textarea {
+  display: flex;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50;
+  
+  border-bottom: 0.2em solid black;
+  border-width: 0.2em;
+  background-color: transparent;
+
+  font-weight: bold;
+  text-align: center;
+
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  margin-left: 10%;
+  margin-right: 10%;
+
+  width: 80%;
+
+  resize: none;
+}
+
+.handle {
+  display: flex;
+  align-self: flex-start;
+  order: 4;
+}
+
+.new-tweet div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.username {
+  display: flex;
+  order: 2;
+}
+
+
+#alertLong {
+  text-decoration: underline red;
+  color: red;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#alertNoText {
+  text-decoration: underline red;
+  color: red;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .new-tweet {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-}
-
-#tweet-text {
+  border: 0.2em solid #000;
   width: 100%;
-  border: none;
-  border-bottom: 2px solid black;
-  background-color: #f4f1ec;
 }
 
-.buttonDiv {
-  display: flex;
-  justify-content: space-between;
-  font: #f4f1ec;
+.counter {
+  margin: 5%;
 }
 
 #tweetButton {
-  color: #f4f1ec;
-  background-color: #4056a1;
+  margin: 1em;
 }
 
-.tweetsContainer {
-  display: flex;
-  border: solid black 1px;
-  width: 50%;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: flex-start;
-  margin: auto;
-  
-}
-
-.bottomTweetBox {
-  flex-direction: row;
-  justify-content: space-between;
+.counterRed {
+  color: red;
 }

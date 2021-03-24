@@ -8,76 +8,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> <!-- bungee font -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet"> <!-- source sans pro font -->
-
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-    
+    <link rel="stylesheet" href="/styles/tweet-box.css" type="text/css" />
+
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
-
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="header">tweeter</span>
-      <a type="submit" id="writeNew" href="#linkButton"><strong>Write</strong> a New Tweet</a>
-      <i class="fas fa-angle-double-down"></i>
+      <a type="submit"id="writeANewTweet" href="#linkButton">Write a new tweet</a>
     </nav>
-    <header id="linkButton" class="topHeader"> 
+    <header id="linkButton" class="topHeader">
       <div>
-        <img src="/images/profile-hex.png">
-      </div>
-      <br>
-      <div>
-        <h2>Doctor Seuss</h2>
-      </div>
-    </header>
-
+          <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+          <h2>Sir Isaac Newton</h2>
+        </div>
+  </header>
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <div class="fullContainer">
+     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form>
+        <form id="newTweet" method="post" action="/tweets/">
+          <label for="tweet-text"></label>
+          <p hidden id="alertLong">ERROR: TWEET TOO LONG </p>
+          <p hidden id="alertNoText">ERROR: TWEET TOO SHORT</p>
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <div class="buttonDiv">
+          <div>
             <button type="submit" id="tweetButton">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
-          <!-- <div>
-            <h1>HERE ARE SOME WORDS THAT I NEED TO PLACE PROPERLY</h1>
-          </div> -->
         </form>
       </section>
-    </main>
-    <div class="tweetsContainer">
-      <article class="tweetBox">
-        <header class="tweetHeader">
-          <div class="usernameAvatar">
-            <img class="avatar"src="/images/profile-hex.png" width="50px" height="50px"> 
-            <h4 class="username">baby-bottle</h4>
-          </div>
-          <h5 class="handle">@bigbootybutch</h5>
-        </header>
-          <div class="tweetContent">
-            <h5 class="words">Hey its me</h3>
+     </main>
+      <div class="tweetsContainer">
+        <article class="tweetBox">
+          <header class="tweetHeader">
+            <div class="usernameAvatar">
+              <img class="avatar"src="/images/profile-hex.png" width="50px" height="50px"> 
+              <h4 class="username">LukeOloffs</h4>
             </div>
-          <footer class="bottomTweetBox">
-            <h6 class="timeStamp">6 days ago</h6>
-            <div class="reactions">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="retweet"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flag"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
-            </div>
-        </footer>
-      </article>
+            <h5 class="handle">@loloffs</h5>
+          </header>
+            <div class="tweetContent">
+              <h5 class="words">Hey its me Luke</h3>
+              </div>
+            <footer class="bottomTweetBox">
+              <h6 class="timeStamp">6 days ago</h6>
+              <div class="reactions">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="retweet"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flag"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+              </div>
+          </footer>
+        </article>
+      </div>
     </div>
-  </div>
-</body>
   </body>
 </html>

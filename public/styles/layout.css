@@ -3,7 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -15,31 +15,43 @@ html {
  */
 
 body {
-  /* display: flex; */
+  display: flex;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-  border: 10px;
-  /* align-items: center;  
+  align-items: center;  
   flex-direction: row;
-  padding-top: 5em; */
-  margin: auto;
+  padding-top: 5em;
+
 }
+
 
 main {
   display: flex;
   width: 90%;
-  align-content: center;
   background-color: #f4f1ec;
   flex-direction: row;
-  margin: auto;
+  align-items: center;
 }
 
+.fullContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* media query: when width is less than 800px, format the page for mobile devices. */
+
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+} 
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
-
-/* Need to do this step:  https://web.compass.lighthouselabs.ca/days/w04d1/activities/319 */
