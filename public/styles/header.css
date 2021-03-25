@@ -9,9 +9,8 @@
   align-self: flex-start;
 }
 
-@media (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .topHeader {
-    margin-left: 10em;
-    margin-right: 10em;
+   width: 60%;
   }
 }

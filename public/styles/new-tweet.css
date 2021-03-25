@@ -1,104 +1,85 @@
 .container {
   display: flex;
-  background-color: #f4f1ec;
+  margin-top: 5px;
+  background-color: white;
   justify-content: center;
   align-items: flex-start;
   font-family: 'Bungee', cursive;
-  width: 114%;
-  padding: 1em;
+  width: 100%;
   align-self: center;
 }
-
 .new-tweet button {
-  background-color: lightblue; 
+  background-color: black; 
   border: none;
-  color: black;
+  color: lightblue;
   padding: .8em 1.2em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
 }
-
 .new-tweet h2 {
-  color: black;
+  color: lightblue;
   font-size: 24px;
   text-align: center;
 }
-
-
 .new-tweet textarea {
   display: flex;
   color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 50;
-  
   border-bottom: 0.2em solid black;
   border-width: 0.2em;
   background-color: transparent;
-
   font-weight: bold;
   text-align: center;
-
   outline: none;
   outline-style: none;
   border-top: none;
   border-left: none;
   border-right: none;
-
   margin-left: 10%;
   margin-right: 10%;
-
   width: 80%;
-
   resize: none;
 }
-
 .handle {
   display: flex;
   align-self: flex-start;
   order: 4;
 }
-
 .new-tweet div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .username {
   display: flex;
   order: 2;
 }
-
-
 #alertLong {
   text-decoration: underline red;
   color: red;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
-
 #alertNoText {
   text-decoration: underline red;
   color: red;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
-
 .new-tweet {
   border: 0.2em solid #000;
   width: 100%;
 }
-
 .counter {
   margin: 5%;
+  color: black;
 }
-
 #tweetButton {
   margin: 1em;
 }
-
 .counterRed {
-  color: red;
+  color: black;
 }

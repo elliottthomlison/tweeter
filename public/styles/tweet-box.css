@@ -1,17 +1,17 @@
 .tweetBox {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5px;
+  margin-top: 5px;
   height: 100%;
   width: 125%;
-  background-color: red;
   border: 4px solid black;
   justify-content: space-evenly;
-  margin-bottom: 5px;
-  margin-top: 0px;
+  background-color: white;
 }
 .tweetBox:hover {
   box-shadow: 5px;
-  background-color: white;
+  background-color: lightgray;
 }
 .tweetsContainer {
   width: 80%;
@@ -37,57 +37,56 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-
   border-bottom-width: .2em;
   border-bottom-style: solid;
-  border-color: white;
+  border-color: black;
   margin-bottom: 4px;
-}
-.words {
-  color: white;
-  margin-bottom: 3px;
-}
-.username {
-  color: white;
-  margin: 0px;
 }
 .bottomTweetBox {
   flex-direction: row;
   justify-content: space-between;
 }
+.words {
+  color: black;
+  margin-bottom: 3px;
+}
+.flag {
+  color: black;
+  margin-right: .2em;
+  margin-bottom: .2em;
+}
+.username {
+  color: black;
+  margin: 0px;
+}
 .handle {
-  color: white;
+  color: black;
   margin: 0px;
 }
 .timeStamp {
-  color: white;
+  color: black;
   width: 100px;
   margin-left: 40px;
   margin-right: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.retweet {
+  color: black;
+  margin-left: .2em;
+  margin-right: .2em;
+  margin-bottom: .2em;
+}
 .bodyClass {
-  background-color: gray;
+  background-color: black;
 }
 .reactions {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-.retweet {
-  color: white;
-  margin-left: .2em;
-  margin-right: .2em;
-  margin-bottom: .2em;
-}
-.flag {
-  color: white;
-  margin-right: .2em;
-  margin-bottom: .2em;
-}
 .heart {
   display: flex;
   margin: 0em;
-  color: white;
+  color: black;
 }
