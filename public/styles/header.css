@@ -7,7 +7,6 @@
   flex-direction: column;
   align-items: center;
   align-self: flex-start;
-  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");;
 }
 
 @media (min-width: 800px) {

@@ -5,17 +5,13 @@
  */
 
 $(document).ready(function () {
-  
   const escape =  function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   }
-
   const createTweetElement = function (tweetObj) {
-
     const tweet = $("<article>").addClass("tweetBox");
-
     const markup = `
     <header class="tweetHeader">
       <div class="usernameAvatar">
@@ -37,7 +33,6 @@ $(document).ready(function () {
     </footer>`;
 
     return tweet.append(markup);
-
   };
 
   const renderTweets = function (tweetExample) {
@@ -49,10 +44,9 @@ $(document).ready(function () {
   };
 
 const $form = $("#newTweet");
-
   $form.on('submit', function (event) {
     event.preventDefault();
-    
+   
     if (event.target.elements[0].value.length === 0) {
       $("#alertNoText").slideDown(400, () => {
         setTimeout(function() {
@@ -79,7 +73,6 @@ const $form = $("#newTweet");
     })
   });
 
-  
  const loadTweets = function() {
   $.ajax({ 
     url: "/tweets",
