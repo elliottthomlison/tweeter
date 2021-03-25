@@ -12,9 +12,6 @@ $(document).ready(function () {
     return div.innerHTML;
   }
 
-
-
-
   const createTweetElement = function (tweetObj) {
 
     const tweet = $("<article>").addClass("tweetBox");
@@ -43,9 +40,6 @@ $(document).ready(function () {
 
   };
 
-
-
-
   const renderTweets = function (tweetExample) {
     const tweetsContainer = $(".tweetsContainer");
     for (const x of tweetExample) {
@@ -54,11 +48,7 @@ $(document).ready(function () {
     }
   };
 
-
-
-
-
-  const $form = $("#newTweet");
+const $form = $("#newTweet");
 
   $form.on('submit', function (event) {
     event.preventDefault();

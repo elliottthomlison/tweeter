@@ -1,8 +1,8 @@
 nav {
   font-family: 'Bungee', cursive; 
-  color: goldenrod;
+  color: lightblue;
   height: 120px;
-  background-color: black;
+  background-color: red;
   width: 100%;
   font-size: 32px;
   padding: 1.5em;
@@ -13,8 +13,9 @@ nav {
 }
 
 #writeANewTweet {
-  color: black;
+  color: lightblue;
+  font-weight: bold;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: goldenrod;
+  background-color: red;
   padding: .1em;
 }
