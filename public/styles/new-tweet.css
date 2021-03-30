@@ -1,3 +1,4 @@
+/* adjust the container */
 .container {
   display: flex;
   margin-top: 5px;
@@ -8,6 +9,7 @@
   width: 100%;
   align-self: center;
 }
+/* adjust the tweet button */
 .new-tweet button {
   background-color: black; 
   border: none;
@@ -70,7 +72,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 .new-tweet {
-  border: 0.2em solid #000;
+  border: 0.2em solid black;
   width: 100%;
 }
 .counter {
@@ -81,5 +83,5 @@
   margin: 1em;
 }
 .counterRed {
-  color: black;
+  color: red;
 }

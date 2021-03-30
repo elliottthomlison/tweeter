@@ -1,3 +1,4 @@
+/* adjust this to change the header portion */
 .topHeader {
   display: flex;
   height: 400px;
@@ -9,6 +10,7 @@
   align-self: flex-start;
 }
 
+/* this controls the resizing adjustment point */
 @media only screen and (min-width: 1000px) {
   .topHeader {
    width: 60%;

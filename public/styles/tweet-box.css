@@ -1,3 +1,4 @@
+/* adjust the tweetBox container */
 .tweetBox {
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@
   justify-content: space-evenly;
   background-color: white;
 }
+/* adjust the hover feature */
 .tweetBox:hover {
   box-shadow: 5px;
   background-color: lightgray;
@@ -26,8 +28,8 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 10px 20px 0 20px;
-
 }
+/* adjust the avatar */
 .avatar {
   display: flex;
   margin-right: 20px;
