@@ -1,6 +1,6 @@
 /* adjust the tweetBox container */
 .tweetBox {
-  display: flex;
+  display: block;
   flex-direction: column;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -12,6 +12,7 @@
 }
 /* adjust the hover feature */
 .tweetBox:hover {
+  display: block;
   box-shadow: 5px;
   background-color: lightgray;
 }
@@ -43,6 +44,9 @@
   border-bottom-style: solid;
   border-color: black;
   margin-bottom: 4px;
+  flex-wrap: nowrap;
+  word-break: break-all;
+  padding: 0 20px;
 }
 .bottomTweetBox {
   flex-direction: row;
@@ -52,7 +56,7 @@
   color: black;
   margin-bottom: 3px;
 }
-.flag {
+.flag:hover {
   color: black;
   margin-right: .2em;
   margin-bottom: .2em;
@@ -73,7 +77,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.retweet {
+.retweet:hover {
   color: black;
   margin-left: .2em;
   margin-right: .2em;
@@ -87,7 +91,7 @@
   flex-direction: row;
   justify-content: flex-end;
 }
-.heart {
+.heart:hover {
   display: flex;
   margin: 0em;
   color: black;

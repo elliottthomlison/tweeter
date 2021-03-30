@@ -13,7 +13,7 @@ $(document).ready(function () {
   const createTweetElement = function (tweetObj) {
     const tweet = $("<article>").addClass("tweetBox");
     const markup = `
-    <header class="tweetHeader">
+        <header class="tweetHeader">
       <div class="usernameAvatar">
         <img class="avatar"src="${tweetObj.user.avatars}" width="50px" height="50px"> 
     <h4 class="username">${tweetObj.user.name}</h4>
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
     return tweet.append(markup);
   };
-
+  
   const renderTweets = function (tweetExample) {
     const tweetsContainer = $(".tweetsContainer");
     for (const x of tweetExample) {
@@ -69,6 +69,7 @@ const $form = $("#newTweet");
       method: 'POST',
       data: $(this).serialize(),  
     }).then(() => { // Load tweets every time a new tweet is created
+      $('#tweet-text').val('')
       loadTweets();
     })
   });
@@ -84,8 +85,4 @@ const $form = $("#newTweet");
  };
  loadTweets();
 });
-
-
-
-
 
