@@ -10,6 +10,7 @@ $(document).ready(function () {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   }
+
   const createTweetElement = function (tweetObj) {
     const tweet = $("<article>").addClass("tweetBox");
     const markup = `
@@ -24,7 +25,8 @@ $(document).ready(function () {
     <h5 class="words">${escape(tweetObj.content.text)}</h3>
         </div>
       <footer class="bottomTweetBox">
-    <h6 class="timeStamp">${tweetObj.created_at}</h6>
+    <h6 class="timeStamp">${moment(tweetObj.created_at).format('YYYY-MM-DD')}</h6>
+    
         <div class="reactions">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="retweet"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
@@ -35,6 +37,7 @@ $(document).ready(function () {
     return tweet.append(markup);
   };
   
+//rendering the tweets
   const renderTweets = function (tweetExample) {
     const tweetsContainer = $(".tweetsContainer");
     for (const x of tweetExample) {
@@ -46,7 +49,8 @@ $(document).ready(function () {
 const $form = $("#newTweet");
   $form.on('submit', function (event) {
     event.preventDefault();
-   
+
+//controlling the alert parameters when under 0
     if (event.target.elements[0].value.length === 0) {
       $("#alertNoText").slideDown(400, () => {
         setTimeout(function() {
@@ -55,6 +59,8 @@ const $form = $("#newTweet");
       });
       return;
     }
+
+//controlling the alert parameters when exceeding 140
     if (event.target.elements[0].value.length > 140) {
       $("#alertLong").slideDown(400, () => {
         setTimeout(function() {
@@ -63,7 +69,8 @@ const $form = $("#newTweet");
       });      
       return;
     }
-    
+
+//in charge of the new tweets being created
     $.ajax({ 
       url: "/tweets",
       method: 'POST',

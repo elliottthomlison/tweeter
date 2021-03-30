@@ -4,6 +4,7 @@
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 /* adjust the body container */
 body {
   display: flex;
@@ -15,6 +16,7 @@ body {
   flex-direction: column;
   padding-top: 5em;
 }
+
 /* adjust the main container */
 main {
   display: flex;
@@ -22,6 +24,7 @@ main {
   flex-direction: row;
   align-items: center;
 }
+
 .fullContainer {
   display: flex;
   flex-direction: column;
@@ -30,6 +33,7 @@ main {
   margin-right: 2em;
   margin-bottom: 2em;
 }
+
 /* adjust the image upon screen size changes */
 @media only screen and (min-width: 1000px) {
   body {

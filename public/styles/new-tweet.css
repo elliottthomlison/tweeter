@@ -9,6 +9,7 @@
   width: 100%;
   align-self: center;
 }
+
 /* adjust the tweet button */
 .new-tweet button {
   background-color: black; 
@@ -20,11 +21,15 @@
   display: inline-block;
   font-size: 18px;
 }
+
+/*new-tweet box header*/
 .new-tweet h2 {
   color: lightblue;
   font-size: 24px;
   text-align: center;
 }
+
+/*new-tweet textarea*/
 .new-tweet textarea {
   display: flex;
   color: black;
@@ -45,43 +50,59 @@
   width: 80%;
   resize: none;
 }
+
 .handle {
   display: flex;
   align-self: flex-start;
   order: 4;
 }
+
 .new-tweet div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/*usernames placement for new tweets*/
 .username {
   display: flex;
   order: 2;
 }
+
+/*alert for text over 140*/
 #alertLong {
   text-decoration: underline red;
   color: red;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+/*alert for under minimum amount*/
 #alertNoText {
   text-decoration: underline red;
   color: red;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+/*alert for new tweet*/
 .new-tweet {
   border: 0.2em solid black;
   width: 100%;
 }
+
+/*the counter that is created as the tweet is typed*/
 .counter {
   margin: 5%;
   color: black;
 }
+
+/*the button for the tweet*/
 #tweetButton {
   margin: 1em;
 }
+
+/*when the counter exceeds 140 this color is activated*/
 .counterRed {
   color: red;
 }

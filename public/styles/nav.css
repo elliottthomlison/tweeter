@@ -12,6 +12,8 @@ nav {
   text-align: center;
   text-align-last: justify;
 }
+
+/* in charge of the portion that is writing a new tweet */
 #writeANewTweet {
   color: lightblue;
   font-weight: bold;

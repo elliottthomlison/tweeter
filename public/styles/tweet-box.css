@@ -10,19 +10,25 @@
   justify-content: space-evenly;
   background-color: white;
 }
+
 /* adjust the hover feature */
 .tweetBox:hover {
   display: block;
   box-shadow: 5px;
   background-color: lightgray;
 }
+
+/*tweets container*/
 .tweetsContainer {
   width: 80%;
 }
+
+/*avatar that is specific for each random user*/
 .usernameAvatar {
   display: flex;
   align-items: flex-start;
 }
+
 .tweetHeader {
   display: flex;
   width: 90%;
@@ -30,12 +36,15 @@
   justify-content: space-between;
   margin: 10px 20px 0 20px;
 }
+
 /* adjust the avatar */
 .avatar {
   display: flex;
   margin-right: 20px;
   order: 1;
 }
+
+/*the portion in charge of the newtweet box text area / break-all so it doesn't run out of the box*/
 .tweetContent {
   display: flex;
   flex-direction: column;
@@ -48,27 +57,35 @@
   word-break: break-all;
   padding: 0 20px;
 }
+
 .bottomTweetBox {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .words {
   color: black;
   margin-bottom: 3px;
 }
+
+/*activated so that it only appears when the cursor hovers*/
 .flag:hover {
   color: black;
   margin-right: .2em;
   margin-bottom: .2em;
 }
+
 .username {
   color: black;
   margin: 0px;
 }
+
 .handle {
   color: black;
   margin: 0px;
 }
+
+/*need to change this portion so that it generates a time*/
 .timeStamp {
   color: black;
   width: 100px;
@@ -77,20 +94,25 @@
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .retweet:hover {
   color: black;
   margin-left: .2em;
   margin-right: .2em;
   margin-bottom: .2em;
 }
+
 .bodyClass {
   background-color: black;
 }
+
 .reactions {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
+
+/*hover added so that it only appears at times*/
 .heart:hover {
   display: flex;
   margin: 0em;
