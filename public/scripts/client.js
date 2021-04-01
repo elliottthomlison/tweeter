@@ -40,6 +40,7 @@ $(document).ready(function () {
 //rendering the tweets
   const renderTweets = function (tweetExample) {
     const tweetsContainer = $(".tweetsContainer");
+    $('.tweetsContainer').empty();
     for (const x of tweetExample) {
       let tweetArticle = createTweetElement(x);
       tweetsContainer.prepend(tweetArticle);
